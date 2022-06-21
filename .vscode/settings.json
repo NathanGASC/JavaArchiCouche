@@ -1,0 +1,15 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "c:\\Users\\nathangasc\\Downloads\\jar_files\\jackson-annotations-2.13.3.jar",
+        "c:\\Users\\nathangasc\\Downloads\\jar_files\\jackson-core-2.13.3.jar",
+        "c:\\Users\\nathangasc\\Downloads\\jar_files\\jackson-databind-2.13.3.jar",
+        "c:\\Users\\nathangasc\\Downloads\\jar_files (1)\\http-20070405.jar"
+    ],
+    "java.project.sourcePaths": [
+        "eu.ensup.gestionTrain.presentation/src",
+        "eu.ensup.gestionTrain.domain/src",
+        "eu.ensup.gestionTrain.DAO/src",
+        "eu.ensup.gestionTrain.service/src"
+    ]
+}
