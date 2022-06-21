@@ -1,18 +1,18 @@
 import java.util.ArrayList;
 
-public class TrainDAO {
-    static public ArrayList<Train> get() {
+public class TrainDAO implements ITrainDAO {
+    public ArrayList<Train> get() throws Error {
         return get(0);
     }
 
-    static public ArrayList<Train> get(int id) {
+    public ArrayList<Train> get(int id) throws Error {
         ArrayList<Train> object = new ArrayList<Train>();
         object.add(new Train(id,120,"blue",4,90,"electrique"));
 
         return object;
     }
 
-    static public ArrayList<Train> post(Train train) {
+    public ArrayList<Train> post(Train train) throws Error {
         ArrayList<Train> object = new ArrayList<Train>();
 
         object.add(train);
@@ -20,7 +20,7 @@ public class TrainDAO {
         return object;
     }
 
-    static public ArrayList<Train> update(int id, Train train) {
+    public ArrayList<Train> update(int id, Train train) throws Error {
         ArrayList<Train> object = new ArrayList<Train>();
 
         train.setId(id);
@@ -29,7 +29,7 @@ public class TrainDAO {
         return object;
     }
 
-    static public ArrayList<Train> delete(int trainId) {
+    public ArrayList<Train> delete(int trainId) throws Error {
         ArrayList<Train> object = new ArrayList<Train>();
 
         object.add(new Train(trainId,120,"blue",4,90,"electrique"));
